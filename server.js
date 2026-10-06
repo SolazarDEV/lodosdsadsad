@@ -1,13 +1,13 @@
-// server.js — Fedora AI (arquivo único, zero dependências)
-// Rodar: GROQ_KEY="gsk_..." node server.js
-// Render start command: node server.js
+
 
 import http from "node:http";
 
-const GROQ_KEY = process.env.GROQ_KEY;
+const GROQ_KEY = "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";
 const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
 const GROQ_MODELS_URL = "https://api.groq.com/openai/v1/models";
 const PORT = process.env.PORT || 3000;
+
+// resto do arquivo igual ao que você já tem
 
 if (!GROQ_KEY) {
     console.error("[Fedora] GROQ_KEY ausente nas env vars.");
